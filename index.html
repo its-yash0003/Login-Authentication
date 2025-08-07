@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <form id="loginForm" onsubmit="return validateForm()">
+      <h2><i class="fa-solid fa-right-to-bracket"></i> LOGIN AUTHENTICATION</h2>
+
+      <div class="formdesign">
+        <i class="fa fa-user"></i>
+        <input type="text" id="nameField" required placeholder=" " />
+        <label for="nameField">Name</label>
+        <span class="formerror" id="nameError"></span>
+      </div>
+
+      <div class="formdesign">
+        <i class="fa fa-envelope"></i>
+        <input type="email" id="emailField" required placeholder=" " />
+        <label for="emailField">Email</label>
+        <span class="formerror" id="emailError"></span>
+      </div>
+
+      <div class="formdesign">
+        <i class="fa fa-phone"></i>
+        <input type="text" id="phoneField" required placeholder=" " />
+        <label for="phoneField">Phone</label>
+        <span class="formerror" id="phoneError"></span>
+      </div>
+
+      <div class="formdesign">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="passwordField" required placeholder=" " />
+        <label for="passwordField">Password</label>
+        <span class="formerror" id="passwordError"></span>
+      </div>
+
+      <div class="formdesign">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="cpasswordField" required placeholder=" " />
+        <label for="cpasswordField">Confirm Password</label>
+        <span class="formerror" id="cpasswordError"></span>
+      </div>
+
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
